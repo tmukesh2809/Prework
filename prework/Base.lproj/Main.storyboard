@@ -93,18 +93,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0VO-NK-wrh">
-                                <rect key="frame" x="205" y="169" width="164" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Mm-gD-6LF">
+                                <rect key="frame" x="206" y="162" width="162" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="peopleNoChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="lw2-su-vxc"/>
+                                    <action selector="peopleChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Cgd-tp-RMr"/>
                                 </connections>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="pbo-fP-6Ae">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="sGk-SW-nPo">
@@ -116,7 +116,7 @@
                     <connections>
                         <outlet property="billAmountTextField" destination="yaj-Vn-fcM" id="icd-2X-Tre"/>
                         <outlet property="dividedAmount" destination="jOg-cu-w2g" id="5jj-OY-3ZN"/>
-                        <outlet property="numberOfPeople" destination="0VO-NK-wrh" id="7fI-Ty-ikn"/>
+                        <outlet property="numberOfPeople" destination="9Mm-gD-6LF" id="lLb-Mz-sSe"/>
                         <outlet property="tipAmountLabel" destination="0Ga-w7-TjA" id="thv-yE-FN7"/>
                         <outlet property="tipControl" destination="0QN-jm-tix" id="Mfp-wq-A3h"/>
                         <outlet property="totalLabel" destination="6j7-dZ-cbB" id="2kG-Rl-XTf"/>
@@ -141,7 +141,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="liV-yD-m4J">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="liV-yD-m4J">
                                 <rect key="frame" x="123" y="128" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -184,8 +184,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

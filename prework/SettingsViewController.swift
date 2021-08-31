@@ -12,17 +12,22 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var modeButton: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        changeMode()
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func DarkMode(_ sender: Any) {
+    let initialView = ViewController()
+    func changeMode() {
         if modeButton.isOn {
-            self.view.backgroundColor = UIColor.darkGray
+            overrideUserInterfaceStyle = .dark
+            initialView.overrideUserInterfaceStyle = .dark
         } else {
-            self.view.backgroundColor = UIColor.white
+            overrideUserInterfaceStyle = .light
+            initialView.overrideUserInterfaceStyle = .light
         }
+    }
+    @IBAction func DarkMode(_ sender: Any) {
+        changeMode()
     }
     
     /*

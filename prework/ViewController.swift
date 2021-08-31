@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         billAmountTextField.becomeFirstResponder()
+        // Do any additional setup after loading the view.
     }
 
     func updateTip() {
@@ -34,11 +35,16 @@ class ViewController: UIViewController {
         let total = bill + tip
         let dividedTotal = total/persons
         
-            // This causes first view to fade in and second view to fade out
-        tipAmountLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
-        dividedAmount.text = String(format: "$%.2f", dividedTotal)
-        
+        //Updating respective labels
+        tipAmountLabel.text = currencyConvert(amount: tip)
+        totalLabel.text = currencyConvert(amount: total)
+        dividedAmount.text = currencyConvert(amount: dividedTotal)
+    }
+    func currencyConvert(amount: Double) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        numberFormatter.locale = Locale.current
+        return numberFormatter.string(from: NSNumber(value: amount))!
     }
     @IBAction func calculateTip(_ sender: Any) {
         updateTip()
@@ -46,9 +52,9 @@ class ViewController: UIViewController {
     @IBAction func newBillAmount(_ sender: Any) {
         updateTip()
     }
-    
-    @IBAction func peopleNoChange(_ sender: Any) {
+    @IBAction func peopleChanged(_ sender: Any) {
         updateTip()
     }
+    
 }
 
