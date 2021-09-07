@@ -22,7 +22,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] List anything else that you can get done to improve the app functionality!
 - [x] Typing the bill amount generates the Tip at the moment without having to click on any button.
 - [x] Added the functionality to divide the total payable amount amongst a group of people.
 
