@@ -16,14 +16,12 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    let initialView = ViewController()
     func changeMode() {
         if modeButton.isOn {
             overrideUserInterfaceStyle = .dark
-            initialView.overrideUserInterfaceStyle = .dark
         } else {
             overrideUserInterfaceStyle = .light
-            initialView.overrideUserInterfaceStyle = .light
+            
         }
     }
     @IBAction func DarkMode(_ sender: Any) {

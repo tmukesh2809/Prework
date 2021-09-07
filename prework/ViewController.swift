@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         billAmountTextField.becomeFirstResponder()
         // Do any additional setup after loading the view.
+        overrideUserInterfaceStyle = .light
+        
     }
 
     func updateTip() {
